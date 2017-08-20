@@ -1,0 +1,19 @@
+extends ../layout-dashboard
+
+block content
+    .d-flex.justify-content-between.mb-3
+        .p-0
+            h1=title
+    include ../message
+    .row
+        .col
+            form(method="POST", enctype="multipart/form-data")
+                h3 Download DB File
+                .form-group
+                    .form-group
+                        select.custom-select(name="downloadDB")
+                            option(selected) Select DB
+                            - each db in databases
+                                option(value=db.name) #{db.name}
+                button.btn.btn-primary(type="submit") Submit
+

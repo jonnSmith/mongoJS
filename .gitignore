@@ -1,0 +1,6 @@
+.idea
+node_modules
+public/css/*.css
+public/js/*.js
+npm-debug.log
+config.json

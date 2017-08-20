@@ -1,0 +1,22 @@
+extends ../layout-dashboard
+
+block content
+    .d-flex.justify-content-between.mb-3
+        .p-0
+            h1=title
+    include ../message
+    .row
+        .col
+            form(method="POST", enctype="multipart/form-data")
+                h3 Upload DB File
+                .form-group
+                    select.custom-select(name="uploadDB")
+                        option(selected) Select DB
+                        - each db in databases
+                            option(value=db.name) #{db.name}
+                .form-group
+                    label(for='exampleInputFile') Upload database file
+                        input#exampleInputFile.form-control-file(type='file', aria-describedby='fileHelp', name="file")
+                        small#fileHelp.form-text.text-muted Upload JSON file to database. All data will be replaced.
+                button.btn.btn-primary(type="submit") Submit
+

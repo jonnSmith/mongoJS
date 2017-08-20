@@ -1,0 +1,16 @@
+extends layout-login
+
+block content
+    .row.h-100.justify-content-center.login-holder
+        .col-5.my-auto
+            .jumbotron
+                form(method="POST", action="/login")
+                    .logo.mb-5
+                        img(src="/img/logo.svg", alt=title)
+                    .form-group
+                        label User name
+                        input.form-control(type="text", name="username", required)
+                    .form-group
+                        label User password
+                        input.form-control(type="password", name="password", required)
+                    button.btn.btn-primary.mt-3(type="submit") Login

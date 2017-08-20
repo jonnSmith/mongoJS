@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title= title
+        block styles
+            link(rel='stylesheet', href='/assets/bootstrap/css/bootstrap.min.css')
+            link(rel='stylesheet', href='/assets/icons/css/font-awesome.css')
+            link(rel='stylesheet', href='/assets/tether/css/tether.min.css')
+            link(rel='stylesheet', href='/css/styles.css')
+    body
+        include navbar
+        .container.dashboard-container
+            block content
+        block scripts
+            script(src='/assets/jquery/jquery.slim.min.js')
+            script(src='/assets/tether/js/tether.min.js')
+            script(src='/assets/bootstrap/js/bootstrap.min.js')
+            script(src='/js/scripts.js')
