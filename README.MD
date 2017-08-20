@@ -1,3 +1,5 @@
+![mongoJS](https://raw.githubusercontent.com/jonnSmith/mongoJS/master/public/img/logo.png)
+
 # mongoJS - more comfortable, flexible, powerful then RoboMongo and other loosers(*joke)(*not joke later)
 
 It's just a prototype of monogDB manage system. I use many of them (Hi-fife*Robomongo) - and all is pour and uncomfortable. So we can change it. Let's rock!
@@ -31,11 +33,11 @@ npm start
 DEBUG=express:* npm start
 ```
 
-#Configure
+# Configure
 
 Copy package.json.dist and config.json.dist without .dist extension and configure them for your OS
 
-*impotant - set as dbName and url tail in mongoDB your existing Mongo Database
+* impotant - set as dbName and url tail in mongoDB your existing Mongo Database
 ```bash
 i'm fixing that, but for now it's only way, sorry lads
 ```
