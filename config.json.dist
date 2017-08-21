@@ -5,6 +5,7 @@
     "dbName": "mongojs",
     "mongoDomain": "mongodb://localhost",
     "mongoPort": "27017",
+    "domain": "localhost",
     "port": "3000",
     "users":  [{
         "id": 1,
@@ -13,4 +14,3 @@
         "displayName": "admin"
     }]
 }
-

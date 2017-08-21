@@ -5,11 +5,12 @@ nav.navbar.navbar-toggleable-md.navbar-light.bg-faded.mb-4
         a.navbar-brand(href='#')
             img(src="/img/logo.svg")
         #navbarNavDropdown.collapse.navbar-collapse
-            li.nav-item.dropdown
-                a#dbDropdownMenuLink.nav-link.dropdown-toggle(href='/admin/db/download', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') DB management
-                .dropdown-menu(aria-labelledby='dbDropdownMenuLink')
-                    a.dropdown-item(href='/admin/db/download') Download
-                    a.dropdown-item(href='/admin/db/upload') Upload
+            ul
+                li.nav-item.dropdown
+                    a#dbDropdownMenuLink.nav-link.dropdown-toggle(href='/admin/db/download', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') DB management
+                    .dropdown-menu(aria-labelledby='dbDropdownMenuLink')
+                        a.dropdown-item(href='/admin/db/download') Download
+                        a.dropdown-item(href='/admin/db/upload') Upload
         form.form-inline.my-2.my-lg-0
             a.btn.btn-outline-primary.my-2.my-sm-0(href="/logout")
                 i.fa.fa-sign-out

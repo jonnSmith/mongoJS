@@ -72,7 +72,7 @@ let processCollectionsData = function (collections,data, dataBase) {
 };
 
 router.get('/download', ensureLoggedIn(), function (req, res, next) {
-    const db = new Db(config.dbName, new Server('localhost', config.mongoPort));
+    const db = new Db(config.dbName, new Server(config.domain, config.mongoPort));
     db.open(function(err, db) {
         const adminDb = db.admin();
         adminDb.listDatabases(function(err, dbs) {
